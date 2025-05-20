@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+
 function App() {
+  const [value, setValue] = useState(50);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      <header className="header">
+         <h1>Ruby's site</h1>
+         </header>
 
+        <section className="section">
+          <div className="projects">
+            <div className="project-card">
+              <h3>About Me</h3>
+              </div>
+              </div>
+        </section>
+    </div>
+    );
+  }
 export default App;
+
